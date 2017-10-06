@@ -19,7 +19,6 @@ public class SoldierDies : MonoBehaviour {
     //TODO play death animation
     public void Die()
     {
-        m_Anim.SetBool("Crouch", true);
 
     }
 }

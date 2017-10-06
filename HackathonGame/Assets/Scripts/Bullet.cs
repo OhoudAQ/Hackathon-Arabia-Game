@@ -26,28 +26,30 @@ public class Bullet : MonoBehaviour {
 	void Update () {
 		
 	}
-
+/*
     public void Shoot()
     {
         if (!isShot)
         {
-            Debug.Log("Bullet shot");
             forceVector = -this.transform.right;
             if (rb2d != null)
                 rb2d.AddForce(forceVector * 3 * 1.5f, ForceMode2D.Impulse);
         }
     }
-
+    */
     public void ShootAnimation()
     {
-       // m_Anim.Play();
+        //initally it is disabled in the inspector
+        if (!m_Anim.enabled)
+            m_Anim.enabled = true;
+        m_Anim.Play("Bullet");
 
     }
+    /*
     void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.name == "SoldierDies")
         {
-            Debug.Log("Bullet OnTriggerExit2D");
             cc2d.isTrigger = false;
             forceVector = this.transform.right;
         
@@ -56,13 +58,7 @@ public class Bullet : MonoBehaviour {
             rb2d.gravityScale = 5;
         }
     }
+    */
 
-    void OnCollisionEnter2D(Collision2D coll)
-    {
 
-        if (coll.gameObject.name == "MiddleRowBrownbrick")
-        {
-           // Destroy(rb2d);
-        }
-    }
 }

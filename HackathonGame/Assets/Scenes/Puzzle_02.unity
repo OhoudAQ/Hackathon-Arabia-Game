@@ -1674,6 +1674,8 @@ GameObject:
   m_Component:
   - component: {fileID: 903822279}
   - component: {fileID: 903822280}
+  - component: {fileID: 903822281}
+  - component: {fileID: 903822282}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Untagged
@@ -1735,6 +1737,34 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
+--- !u!95 &903822281
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 903822278}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 406443a43dd4be5438fdf30e8aa17aaf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &903822282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 903822278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ef0bdca73561c4598ef9c5ddace701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &941669257
 Prefab:
   m_ObjectHideFlags: 0
