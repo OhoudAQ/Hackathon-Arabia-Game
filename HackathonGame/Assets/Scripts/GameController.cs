@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test : MonoBehaviour {
+public class GameController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        //  Debug.Log("Update by Ohoud!");
-        Debug.Log("Update by Rima!");
+        StaticValues.wonPzl1 = false;
+        StaticValues.wonPzl2 = false;
+        StaticValues.wonfinalLevel = false;
+
     }
 	
 	// Update is called once per frame
