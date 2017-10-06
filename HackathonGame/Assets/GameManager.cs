@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour {
 
     public GameObject movie;
     private VideoPlayer videoPlayer;
+    public int wonLevelInt = 0;
+    public bool won = false;
 
 	// Use this for initialization
 	void Start () {
@@ -28,13 +30,20 @@ public class GameManager : MonoBehaviour {
 
         }
 
-        //Play sc
+        //Play scond cutscene
         if (StaticValues.won && StaticValues.level == 1)
         {
 
         }
 
+        //Play third cutscene 
         if (StaticValues.won && StaticValues.level == 1)
+        {
+
+        }
+
+        //Play the end cutscene
+        if (StaticValues.won && StaticValues.level == 2)
         {
 
         }
