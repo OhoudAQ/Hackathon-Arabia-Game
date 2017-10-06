@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e94a3b96b1dbb7443b18f1c1f5b041f8
 folderAsset: yes
 timeCreated: 1436977288
@@ -7,3 +8,10 @@ DefaultImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+=======
+guid: 018119012bd4d014daf775b5c28fdc9b
+folderAsset: yes
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+>>>>>>> Puzzle_02

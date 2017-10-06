@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 96dceb940340fb1449a46c4bda407509
 folderAsset: yes
 timeCreated: 1507304532
+=======
+guid: ec11c4a3c65542248a1cda32e01893f7
+folderAsset: yes
+timeCreated: 1507295983
+>>>>>>> Puzzle_02
 licenseType: Free
 DefaultImporter:
   userData: 
