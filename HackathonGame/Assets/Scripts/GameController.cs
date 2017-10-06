@@ -2,50 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
-    public GameObject movie;
-    private VideoPlayer videoPlayer;
-    public int wonLevelInt = 0;
-    public bool won = false;
+    public static GameController instance;
+    private string levelToLoad;
+ 
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(transform.gameObject);
+        instance = this;
+    }
     // Use this for initialization
     void Start()
     {
         StaticValues.won = false;
         StaticValues.level = 0;
-        videoPlayer = GetComponent<VideoPlayer>();
     }
 
     // Update is called once per frame
-    void Update () {
-        //Play start cutscene
-        if (StaticValues.won && StaticValues.level == 0)
-        {
-            videoPlayer.Play();
-            Debug.Log("Played Start Cutscene!");
-            videoPlayer.Play();
-            Debug.Log("Played Dreams Word Cutscene!");
+    void Update()
+    {
+    }
 
-        }
-
-        //Play scond cutscene
-        if (StaticValues.won && StaticValues.level == 1)
-        {
-
-        }
-
-        //Play third cutscene 
-        if (StaticValues.won && StaticValues.level == 1)
-        {
-
-        }
-
-        //Play the end cutscene
-        if (StaticValues.won && StaticValues.level == 2)
-        {
-
-        }
+    IEnumerator WaitBeforeLoading()
+    {
+        yield return new WaitForSeconds(10f);
+        SceneManager.LoadScene(levelToLoad, LoadSceneMode.Single);
+    }
+    public void LoadLevel(string id)
+    {
+        levelToLoad = id;
+        StartCoroutine("WaitBeforeLoading");
     }
 }

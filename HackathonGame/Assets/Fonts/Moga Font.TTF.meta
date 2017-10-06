@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c3f0ba0294fd0de42b89ee0aea8c2c72
+timeCreated: 1507310499
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Moga_Magdy Soleman
+  fontNames:
+  - Moga_Magdy Soleman
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
