@@ -18,8 +18,8 @@ public class GameController : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        StaticValues.won = false;
-        StaticValues.level = 0;
+        //StaticValues.won = false;
+        //StaticValues.level = 0;
     }
 
     // Update is called once per frame
@@ -36,5 +36,16 @@ public class GameController : MonoBehaviour {
     {
         levelToLoad = id;
         StartCoroutine("WaitBeforeLoading");
+    }
+
+    public void JustWait()
+    {
+        StartCoroutine("WaitBeforeLoading");
+    }
+
+    IEnumerator WaitBeforeAnotherAnim()
+    {
+        yield return new WaitForSeconds(10f);
+       // s.gameObject.SetActive(true);
     }
 }
